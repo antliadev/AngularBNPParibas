@@ -1,20 +1,61 @@
-<!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+  <div style="padding: 20px">
+    <mat-card class="home mat-elevation-z3">
+      <mat-card-title class="title">
+        <img class="photo" style="height: 60px;"
+          src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEBESEhIVFhIVFxoTEBcWGRUWGBcSFxkWFhsZFxoZHSggGB0lHRUVITEhJSkrMC4uFyA4ODMtNygtLi0BCgoKDg0OGRAQGy0gHiA3Ky4tLTcsNzc3MjcxLzcuKysyLS03LzcuLywrNzc3LTcrLzc3NzgwLSwrKzctKysrLf/AABEIAHcBqAMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAABgcEBQgDAQL/xABMEAABAwIDBAUEDggEBgMAAAABAAIDBBEFEiEGBxMxIkFRYZEUcYGhCBcjMkJSU1Rzk6LR0tMWJDVykrLBwmKCsbMVJTODo/A0Q8P/xAAaAQEAAwEBAQAAAAAAAAAAAAAAAQIEBgMF/8QALBEBAAEEAAQEBAcAAAAAAAAAAAECAwQREjFSsRMUIUEFYXGBIyQyUdHh8P/aAAwDAQACEQMRAD8AvFERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERBFttdrXUDoGtg4vFzfDyWLcg+Kb3z+pYA21qfmcY/77vyljbzIs1VhoPK8hPoMR/osazVWZfNu3rkXaoidRGuzZfprU/NIvr3fkp+mtT80i+vd+StbZqWao3KvjXers2X6a1PzSL6935KfprU/NIvr3fkrW2almpuTxrvV2bL9Nan5pF9e78lP01qfmkX17vyVi0dK2U5WvaH9TXnKT+6eTvNe69KrC5I/fRut2jUeITcp8S9Mbiez2/TWp+aRfXu/JT9Nan5pF9e78la3opZqblHjXersleyW0L6xsxfCInRP4ZGbPfQG98o7Vv1Dt3nOt+mH+21TFXhusVTVbiZ5iIiPYREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREEC3km09CewTH1Rj+qjvli329V1nUh7pR48JQPypRpzmdf4MiqPp2hvvLE8sWiZOSbAEnu1WXBSVD3Na2GQudo3okX9J0TTPGRVPKGy8sX6ZUkkAAknkBck+YBeOO4O+kZHxnt4slyI265WjmXO7bkaDv1WqhxORgOR7m355SWk+kappau/Vbq4a/RNKXAKmQdJgjaeuQ2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">
+      </mat-card-title>
+      <mat-card-subtitle class="subtitle">
+        Antlia - BNP Angular.
+      </mat-card-subtitle>
+      <form>
+        <mat-form-field>
+          <input matInput placeholder="Nome" [(ngModel)]="product.description" name="description">
+        </mat-form-field>
+      </form>
 
+      <button mat-raised-button (click)="createProduct()" color="primary">
+        Salvar
+      </button>
+
+      <button mat-raised-button (click)="cancel()">
+        Cancelar
+      </button>
+
+      <table mat-table [dataSource]="products">
+
+        <ng-container matColumnDef="description">
+          <th mat-header-cell *matHeaderCellDef>Descrição</th>
+          <td mat-cell *matCellDef="let row">{{row.description}}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="active">
+          <th mat-header-cell *matHeaderCellDef>Status</th>
+          <td mat-cell *matCellDef="let row">
+            <mat-slide-toggle (click)="changeStatus(row)" [checked]="row.active === true ? true : false">
+            </mat-slide-toggle>
+          </td>
+        </ng-container>
+
+        <ng-container matColumnDef="action">
+          <th mat-header-cell *matHeaderCellDef>Ações</th>
+          <td mat-cell *matCellDef="let row">
+            <a (click)="editProduct(row)" class="edit">
+              <i class="material-icons">
+                edit
+              </i>
+            </a>
+            <a (click)="deleteProduct(row)" class="delete">
+              <i class="material-icons">
+                delete
+              </i>
+            </a>
+          </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+    </mat-card>
+  </div>
+</div>
